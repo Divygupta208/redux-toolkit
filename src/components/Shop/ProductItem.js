@@ -5,11 +5,12 @@ import { productAction } from "../store/ProductReducer";
 import { cartAction } from "../store/CartReducer";
 
 const ProductItem = (props) => {
-  const { title, price, description } = props;
+  const { title, price, description, id } = props;
   const dispatch = useDispatch();
   const addToCart = () => {
     dispatch(
       cartAction.addToCart({
+        id: id,
         title: title,
         price: price,
         description: description,

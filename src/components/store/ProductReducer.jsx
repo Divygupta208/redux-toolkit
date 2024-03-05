@@ -7,6 +7,12 @@ const products = [
     price: 6,
     description: "This is a first product - amazing!",
   },
+  {
+    id: Math.random(),
+    title: "Test-2",
+    price: 6,
+    description: "This is a first product - amazing!",
+  },
 ];
 
 const productSlice = createSlice({
